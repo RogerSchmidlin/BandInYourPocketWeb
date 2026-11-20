@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Band in your Pocket</title>
+  <meta name="description" content="A practice companion for musicians: follow whole songs, take your own role in the band, and keep everyone on the same bar with synced devices.">
+  <meta name="theme-color" content="#2f7568">
+  <meta property="og:title" content="Band in your Pocket">
+  <meta property="og:description" content="Know where you are in the song, and keep the whole band on the same bar.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Band in your Pocket, home">
+        <img src="favicon.svg" alt="" width="28" height="28">
+        <span>Band in your Pocket</span>
+      </a>
+      <nav aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#sessions">Band sessions</a></li>
+          <li><a href="#roadmap">Roadmap</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="badge">In development</p>
+          <h1>Know where you are in the song.</h1>
+          <p class="lead">A practice companion that helps you hear, follow and play through whole songs, take your own part in the band, and keep everyone on the same bar when you play together.</p>
+          <div class="hero-actions">
+            <a class="button" href="#sessions">See band sessions</a>
+            <a class="button button-quiet" href="#roadmap">What comes first</a>
+          </div>
+        </div>
+
+        <figure class="hero-art">
+          <svg viewBox="0 0 520 330" role="img" aria-labelledby="hero-art-title hero-art-desc">
+            <title id="hero-art-title">Three devices showing the same place in a song</title>
+            <desc id="hero-art-desc">A song timeline with intro, three choruses and an ending. The playhead is in chorus 2, bar 9. Three device screens for keys, guitar and bass all show chorus 2, bar 9, chord C7, next B flat 7.</desc>
+
+            <rect class="panel" x="1" y="1" width="518" height="140" rx="18"/>
+            <text class="art-title" x="22" y="32">Basic Blues in F · 96 bpm</text>
+            <g class="live" transform="translate(392 18)">
+              <rect width="108" height="22" rx="11"/>
+              <circle cx="14" cy="11" r="4"/>
+              <text x="24" y="15.5">Band session</text>
+            </g>
+
+            <rect class="seg seg-done" x="20" y="54" width="43.7" height="42" rx="6"/>
+            <rect class="seg seg-done" x="65.7" y="54" width="135.2" height="42" rx="6"/>
+            <rect class="seg seg-now" x="202.9" y="54" width="135.1" height="42" rx="6"/>
+            <rect class="seg-progress" x="202.9" y="54" width="97.1" height="42" rx="6"/>
+            <rect class="seg" x="340" y="54" width="135.1" height="42" rx="6"/>
+            <rect class="seg" x="477.1" y="54" width="22.9" height="42" rx="6"/>
+
+            <text class="seg-label" x="41.8" y="79.5">Intro</text>
+            <text class="seg-label" x="133.3" y="79.5">Chorus 1</text>
+            <text class="seg-label seg-label-now" x="251.5" y="79.5">Chorus 2</text>
+            <text class="seg-label" x="407.5" y="79.5">Chorus 3</text>
+
+            <line class="playhead" x1="300" y1="46" x2="300" y2="104"/>
+            <circle class="playhead-dot" cx="300" cy="46" r="5"/>
+            <text class="art-small" x="300" y="124" text-anchor="middle">bar 9 of 12</text>
+
+            <text class="art-small art-muted" x="260" y="160" text-anchor="middle">Same bar on every device</text>
+
+            <g transform="translate(20 172)">
+              <rect class="device device-lead" width="150" height="148" rx="16"/>
+              <text class="device-role" x="75" y="26">Leader · Keys</text>
+              <text class="device-chord" x="75" y="72">C7</text>
+              <text class="device-next" x="75" y="94">next B♭7</text>
+              <rect class="mini-track" x="20" y="108" width="110" height="6" rx="3"/>
+              <rect class="mini-fill" x="20" y="108" width="78" height="6" rx="3"/>
+              <text class="device-pos" x="75" y="134">Chorus 2 · bar 9</text>
+            </g>
+            <g transform="translate(185 172)">
+              <rect class="device" width="150" height="148" rx="16"/>
+              <text class="device-role" x="75" y="26">Guitar</text>
+              <text class="device-chord" x="75" y="72">C7</text>
+              <text class="device-next" x="75" y="94">next B♭7</text>
+              <rect class="mini-track" x="20" y="108" width="110" height="6" rx="3"/>
+              <rect class="mini-fill" x="20" y="108" width="78" height="6" rx="3"/>
+              <text class="device-pos" x="75" y="134">Chorus 2 · bar 9</text>
+            </g>
+            <g transform="translate(350 172)">
+              <rect class="device" width="150" height="148" rx="16"/>
+              <text class="device-role" x="75" y="26">Bass</text>
+              <text class="device-chord" x="75" y="72">C7</text>
+              <text class="device-next" x="75" y="94">next B♭7</text>
+              <rect class="mini-track" x="20" y="108" width="110" height="6" rx="3"/>
+              <rect class="mini-fill" x="20" y="108" width="78" height="6" rx="3"/>
+              <text class="device-pos" x="75" y="134">Chorus 2 · bar 9</text>
+            </g>
+          </svg>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="problem">
+      <div class="container narrow">
+        <h2>Lost in the second chorus?</h2>
+        <p class="lead">Most practice tools give you something to play over. They don't teach you to find your way through a piece. But knowing the form is what lets you come in on time, recover when you get lost, and end together with the band.</p>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="features">
+      <div class="container">
+        <h2>What we're building</h2>
+        <div class="card-grid">
+          <article class="card">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h18M3 6h6M3 18h10"/><circle cx="15" cy="12" r="2.2"/></svg>
+            <h3>Follow the form</h3>
+            <p>See the whole song as a timeline of sections. The current bar is always highlighted, and a cue comes before every change.</p>
+          </article>
+          <article class="card">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M17 9l4 6M21 9l-4 6"/></svg>
+            <h3>Take a role</h3>
+            <p>Hear the full band, then mute the bass, the chords or the melody and play that part yourself, with the rest of the band behind you.</p>
+          </article>
+          <article class="card">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4v16M12 4v16M19 4v16"/><path d="M3 9h4M10 15h4M17 7h4"/></svg>
+            <h3>Practise your way</h3>
+            <p>Slow it down or move it to your key without losing your place. Count-in, metronome and loops for the part you want to repeat.</p>
+          </article>
+          <article class="card card-accent">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="6" width="7" height="12" rx="1.5"/><rect x="14.5" y="6" width="7" height="12" rx="1.5"/><path d="M10.5 10.5h3M10.5 13.5h3"/></svg>
+            <h3>Play together</h3>
+            <p>Start a band session and every phone or tablet in the room shows the same section and bar. Nobody gets left behind.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sessions">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Band sessions</p>
+          <h2>Everyone in the band, on the same bar.</h2>
+          <p>The hardest moment in a jam is getting lost: <em>are we in the second chorus or the third? Is the ending coming?</em> With a shared timeline, anyone who loses their place can glance down, find the next landmark, and come back in, without stopping the band.</p>
+          <ul class="checks">
+            <li>No typing of addresses, no accounts: devices nearby find the session.</li>
+            <li>Join a running song at any time and jump straight to the right bar.</li>
+            <li>Each device decides for itself: click, backing parts, or just the timeline.</li>
+            <li>Play along with the app's clock, or let the leader tap the section changes of a live band.</li>
+          </ul>
+          <p class="note">Works on the same Wi-Fi, or on the leader's phone hotspot. No internet needed in the rehearsal room.</p>
+        </div>
+        <ol class="steps">
+          <li><span class="step-num">1</span><div><strong>Start a session</strong><br>The leader picks the song, tempo and key.</div></li>
+          <li><span class="step-num">2</span><div><strong>Everyone joins</strong><br>One tap on each phone or tablet in the room.</div></li>
+          <li><span class="step-num">3</span><div><strong>Play</strong><br>Every screen shows the same section, bar and next chord.</div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="how">
+      <div class="container">
+        <h2>Listen, notice, try, vary, play with others</h2>
+        <ol class="flow">
+          <li><strong>Feel the pulse</strong><span>Count-in, pulse cues, short loops</span></li>
+          <li><strong>Hear the style</strong><span>What belongs to this groove?</span></li>
+          <li><strong>Follow the form</strong><span>Where am I, what comes next?</span></li>
+          <li><strong>Learn a role</strong><span>What can I play here?</span></li>
+          <li><strong>Play together</strong><span>Listen, respond, recover</span></li>
+        </ol>
+        <div class="principles">
+          <div><h3>Navigation, not only memorisation</h3><p>Recognise sections, anticipate changes, recover when you lose your place.</p></div>
+          <div><h3>Active listening</h3><p>Hear one musical idea at a time, then combine it with others.</p></div>
+          <div><h3>Every instrument has a role</h3><p>The arrangement makes room for your part, whether you comp, play bass or improvise.</p></div>
+          <div><h3>From practice to people</h3><p>The goal is confident, attentive music-making with other musicians.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="roadmap">
+      <div class="container">
+        <h2>Roadmap</h2>
+        <p class="muted">Order, not dates. The first version focuses on one style and one form, a 12-bar blues, to get the core experience right.</p>
+        <div class="roadmap">
+          <div class="lane lane-now">
+            <h3>Now</h3>
+            <ul>
+              <li>Follow the form of a 12-bar blues</li>
+              <li>Mute a part and play it yourself</li>
+              <li>Tempo, key, count-in and loops</li>
+            </ul>
+          </div>
+          <div class="lane">
+            <h3>Next</h3>
+            <ul>
+              <li>Band sessions: every device on the same bar</li>
+              <li>More forms, styles and grooves</li>
+            </ul>
+          </div>
+          <div class="lane">
+            <h3>Later</h3>
+            <ul>
+              <li>A guided learning path from listening to jamming</li>
+              <li>Real repertoire, once licensing is sorted</li>
+              <li>Sessions over the internet, teacher and ensemble plans</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="follow">
+      <div class="container narrow center">
+        <h2>Follow along</h2>
+        <p>Band in your Pocket is being built right now. A newsletter with listening prompts, practice ideas and honest progress updates is coming soon.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2026 Band in your Pocket</span>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+</body>
+</html>
